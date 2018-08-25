@@ -20,8 +20,6 @@ import androidx.fragment.app.Fragment;
 
 public class RegisterFragment extends Fragment {
 
-    private final String TAG = RegisterFragment.class.getSimpleName();
-
     private MaterialButton registerButton;
     private MaterialButton alreadyRegisteredButton;
     private TextInputEditText registerEmailEditText;

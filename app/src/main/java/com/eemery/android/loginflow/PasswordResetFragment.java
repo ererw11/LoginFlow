@@ -70,7 +70,6 @@ public class PasswordResetFragment extends Fragment {
                                 if (!task.isSuccessful()) {
                                     // Password reset failed
                                     Toast.makeText(getContext(), "Failed To Send Password Reset Number", Toast.LENGTH_SHORT).show();
-                                    return;
                                 } else {
                                     // Password reset successful
                                     Toast.makeText(getContext(), "Password Reset Email Was Sent To " + email, Toast.LENGTH_SHORT).show();
