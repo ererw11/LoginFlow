@@ -115,10 +115,8 @@ public class LoginFragment extends Fragment {
                                     }
                                 } else {
                                     // Login successful, //TODO: Navigate to MainActivity
-//                                    Intent mainActivityIntent = new Intent(getContext(), MainActivity.class);
-//                                    startActivity(mainActivityIntent);
-                                    Toast.makeText(getContext(), "Login Successful", Toast.LENGTH_SHORT).show();
-                                    return;
+                                    Intent mainActivityIntent = new Intent(getContext(), MainActivity.class);
+                                    startActivity(mainActivityIntent);
                                 }
                             }
                         }

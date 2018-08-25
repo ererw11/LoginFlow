@@ -1,5 +1,6 @@
 package com.eemery.android.loginflow;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -16,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
 
 public class RegisterFragment extends Fragment {
 
@@ -94,9 +94,8 @@ public class RegisterFragment extends Fragment {
                                     return;
                                 }
                                 // Navigate to the MainActivity
-//                                Intent mainActivityIntent = new Intent(getContext(), MainActivity.class);
-//                                startActivity(mainActivityIntent);
-                                Toast.makeText(getContext(), "Account Created", Toast.LENGTH_SHORT).show();
+                                Intent mainActivityIntent = new Intent(getContext(), MainActivity.class);
+                                startActivity(mainActivityIntent);
                             }
                         }
                 );
