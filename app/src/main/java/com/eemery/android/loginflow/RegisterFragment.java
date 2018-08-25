@@ -52,10 +52,11 @@ public class RegisterFragment extends Fragment {
 
 
         registerButton = v.findViewById(R.id.register_button);
-        alreadyRegisteredButton = v.findViewById(R.id.already_registered_button);
         registerEmailEditText = v.findViewById(R.id.register_email_edit_text);
         registerPasswordEditText = v.findViewById(R.id.register_password_edit_text);
+        alreadyRegisteredButton = v.findViewById(R.id.already_registered_button);
 
+        // The registerButton was pressed
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,6 +100,14 @@ public class RegisterFragment extends Fragment {
                             }
                         }
                 );
+            }
+        });
+
+        // The alreadyRegistered button was pressed
+        alreadyRegisteredButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().onBackPressed();
             }
         });
 

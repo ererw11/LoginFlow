@@ -71,9 +71,8 @@ public class LoginFragment extends Fragment {
         resetPasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent resetPasswordIntent = new Intent(getContext(), PasswordResetActivity.class);
-//                startActivity(resetPasswordIntent);
-                Toast.makeText(getContext(), "Reset Password Intent", Toast.LENGTH_SHORT).show();
+                Intent resetPasswordIntent = new Intent(getContext(), PasswordResetActivity.class);
+                startActivity(resetPasswordIntent);
             }
         });
 

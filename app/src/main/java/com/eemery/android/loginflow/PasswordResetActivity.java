@@ -6,6 +6,6 @@ public class PasswordResetActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
-        return null;
+        return PasswordResetFragment.newInstance();
     }
 }
