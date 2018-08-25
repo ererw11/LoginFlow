@@ -57,6 +57,16 @@ public class LoginFragment extends Fragment {
         loginEmailEditText = v.findViewById(R.id.login_email_edit_text);
         loginPasswordEditText = v.findViewById(R.id.login_password_edit_text);
 
+
+        // OnClick for the Register Button
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registerIntent = new Intent(getContext(), RegisterActivity.class);
+                startActivity(registerIntent);
+            }
+        });
+
         // OnClickListener for the Reset Password Button
         resetPasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,16 +74,6 @@ public class LoginFragment extends Fragment {
 //                Intent resetPasswordIntent = new Intent(getContext(), PasswordResetActivity.class);
 //                startActivity(resetPasswordIntent);
                 Toast.makeText(getContext(), "Reset Password Intent", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // OnClick for the Register Button
-        registerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Intent registerIntent = new Intent(getContext(), RegisterActivity.class);
-//                startActivity(registerIntent);
-                Toast.makeText(getContext(), "Register Intent", Toast.LENGTH_SHORT).show();
             }
         });
 
